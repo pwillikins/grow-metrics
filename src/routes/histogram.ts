@@ -1,4 +1,6 @@
+import csvParser from "csv-parser";
 import { Request, Response, Router } from "express";
+import fs from "fs";
 
 interface CSVRow {
   [key: string]: string;
@@ -6,39 +8,38 @@ interface CSVRow {
 
 type Histogram = Record<string, number>;
 
-export function histogramRouter(dataRows: CSVRow[]): Router {
+export function histogramRouter(csvPath: string): Router {
   const router = Router();
-  const cache: Record<string, Histogram> = {};
 
-  router.get("/:column/histogram", (req: Request, res: Response) => {
+  router.get("/:column/histogram", async (req: Request, res: Response) => {
     const { column } = req.params;
 
-    if (!dataRows.length) {
-      res.status(500).json({ error: "CSV data not loaded" });
-    }
+    const histogram = await processCSV(column, csvPath);
 
-    if (!dataRows[0][column]) {
-      res.status(404).json({ error: `Column "${column}" not found.` });
-    }
-
-    if (!cache[column]) {
-      cache[column] = buildHistogram(column, dataRows);
-    }
-
-    res.json({ column, histogram: cache[column] });
+    res.json({ column, histogram });
   });
 
   return router;
 }
 
-function buildHistogram(column: string, data: CSVRow[]): Histogram {
-  const histogram = data.reduce<Histogram>((acc, row) => {
-    const value = row[column];
-    if (value !== undefined) {
-      acc[value] = (acc[value] || 0) + 1;
-    }
-    return acc;
-  }, {});
+export function processCSV(column: string, csvPath: string): Promise<Record<string, number>> {
+  return new Promise((resolve, reject) => {
+    const histogramStats: Histogram = {};
 
-  return histogram;
+    fs.createReadStream(csvPath)
+      .pipe(csvParser({
+        mapHeaders: ({ header }) => header.trim().replace(/^"|"$/g, "")
+      }))
+      .on("data", (row: CSVRow) => {
+        const key = row[column]?.trim();
+        if (key) {
+          // if histogramStats[key] is already set, use it's value then add 1, else start at 0
+          histogramStats[key] = (histogramStats[key] || 0) + 1;
+        }
+      })
+      .on("end", () => resolve(histogramStats))
+      .on("error", (err) => reject(err));
+
+    return histogramStats;
+  });
 }

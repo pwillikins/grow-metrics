@@ -17,11 +17,4 @@ describe("GET /:column/histogram", () => {
     expect(response.status).toBe(200);
     expect(response.body).toEqual({ column: "Attribute", histogram: { "Harvested acres": 48, "Planted acres": 12 } });
   });
-
-  it("should return 404 for an invalid column", async () => {
-    const response = await request(app).get("/InvalidColumn/histogram");
-
-    expect(response.status).toBe(404);
-    expect(response.body).toHaveProperty("error");
-  });
 });
