@@ -1,0 +1,61 @@
+Attribute,Commodity,CommodityType,Units,YearType,Year,Value
+Harvested acres,Rice,Crops,Thousand acres,Market year,2019/20,2472
+Harvested acres,Rice,Crops,Thousand acres,Market year,2020/21,2991
+Harvested acres,Rice,Crops,Thousand acres,Market year,2021/22,2552
+Harvested acres,Rice,Crops,Thousand acres,Market year,2022/23,2650
+Harvested acres,Rice,Crops,Thousand acres,Market year,2023/24,2650
+Harvested acres,Rice,Crops,Thousand acres,Market year,2024/25,2650
+Harvested acres,Rice,Crops,Thousand acres,Market year,2025/26,2650
+Harvested acres,Rice,Crops,Thousand acres,Market year,2026/27,2650
+Harvested acres,Rice,Crops,Thousand acres,Market year,2027/28,2650
+Harvested acres,Rice,Crops,Thousand acres,Market year,2028/29,2650
+Harvested acres,Rice,Crops,Thousand acres,Market year,2029/30,2650
+Harvested acres,Rice,Crops,Thousand acres,Market year,2030/31,2650
+Planted acres,Rice,Crops,Thousand acres,Market year,2019/20,2540
+Planted acres,Rice,Crops,Thousand acres,Market year,2020/21,3037
+Planted acres,Rice,Crops,Thousand acres,Market year,2021/22,2600
+Planted acres,Rice,Crops,Thousand acres,Market year,2022/23,2700
+Planted acres,Rice,Crops,Thousand acres,Market year,2023/24,2700
+Planted acres,Rice,Crops,Thousand acres,Market year,2024/25,2700
+Planted acres,Rice,Crops,Thousand acres,Market year,2025/26,2700
+Planted acres,Rice,Crops,Thousand acres,Market year,2026/27,2700
+Planted acres,Rice,Crops,Thousand acres,Market year,2027/28,2700
+Planted acres,Rice,Crops,Thousand acres,Market year,2028/29,2700
+Planted acres,Rice,Crops,Thousand acres,Market year,2029/30,2700
+Planted acres,Rice,Crops,Thousand acres,Market year,2030/31,2700
+Harvested acres,Barley,Crops,Million acres,Market year,2019/20,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2020/21,2.1
+Harvested acres,Barley,Crops,Million acres,Market year,2021/22,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2022/23,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2023/24,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2024/25,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2025/26,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2026/27,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2027/28,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2028/29,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2029/30,2.2
+Harvested acres,Barley,Crops,Million acres,Market year,2030/31,2.2
+Harvested acres,Corn,Crops,Million acres,Market year,2019/20,81.3
+Harvested acres,Corn,Crops,Million acres,Market year,2020/21,82.5
+Harvested acres,Corn,Crops,Million acres,Market year,2021/22,82.5
+Harvested acres,Corn,Crops,Million acres,Market year,2022/23,82.5
+Harvested acres,Corn,Crops,Million acres,Market year,2023/24,82.5
+Harvested acres,Corn,Crops,Million acres,Market year,2024/25,82.5
+Harvested acres,Corn,Crops,Million acres,Market year,2025/26,82.5
+Harvested acres,Corn,Crops,Million acres,Market year,2026/27,81.5
+Harvested acres,Corn,Crops,Million acres,Market year,2027/28,81.5
+Harvested acres,Corn,Crops,Million acres,Market year,2028/29,81.5
+Harvested acres,Corn,Crops,Million acres,Market year,2029/30,81.5
+Harvested acres,Corn,Crops,Million acres,Market year,2030/31,81.5
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2019/20,11.4
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2020/21,8.8
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2021/22,9.5
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2022/23,10
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2023/24,10.2
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2024/25,10.4
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2025/26,10.5
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2026/27,10.5
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2027/28,10.6
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2028/29,10.7
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2029/30,10.8
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2030/31,10.9
